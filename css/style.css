@@ -355,6 +355,15 @@ article.single section.body h6 { color: var(--base03); }
 
 article.single section.body a { color: var(--base0f); }
 
+/* Customize Article Elements */
+
+.hr-twill {
+    border: 0;
+    padding: 3px;
+    background: repeating-linear-gradient(135deg, #a2a9b6 0px, #a2a9b6 1px, transparent 1px, transparent 6px);
+}
+
+
 /* Article Elements */
 
 article.single * {
