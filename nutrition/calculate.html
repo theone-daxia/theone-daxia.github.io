@@ -2,29 +2,32 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <title>营养值计算</title>
     <style>
         .container{
-            width: 500px;
-            height: 800px;
+            width: 100vw;
+            height: 100vh;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             margin: auto;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
         .label-text{
             float: left;
-            width: 20%;
+            width: 30%;
             text-align: right;
         }
         input{
             outline-style: none;
             border: 1px solid #ccc;
             border-radius: 3px;
-            padding: 10px 10px;
-            width: 300px;
+            padding: 1vh 1vw;
+            width: 60%;
             font-size: 14px;
             font-weight: 700;
             font-family: "Microsoft soft";
@@ -118,7 +121,7 @@
 
     <div style="text-align: center">
         <h2 style="text-align: center">结果展示区（每件含量）</h2>
-        <table border="1" style="width: 50%; margin: auto">
+        <table border="1" style="width: 70%; margin: auto">
             <tr>
                 <td>营养素</td>
                 <td>每件含量</td>
