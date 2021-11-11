@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>营养值计算</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 800px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .label-text{
+            float: left;
+            width: 20%;
+            text-align: right;
+        }
+        input{
+            outline-style: none;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            padding: 10px 10px;
+            width: 300px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: "Microsoft soft";
+        }
+        ::-webkit-input-placeholder{
+            text-align: right;
+        }
+        input:focus{
+            border-color: #66afe9;
+            outline: 0;
+            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+        }
+    </style>
+    <script>
+        function calculate() {
+            var energy_input = document.getElementById("energy_input").value
+            var protein_input = document.getElementById("protein_input").value
+            var fat_input = document.getElementById("fat_input").value
+            var cho_input = document.getElementById("cho_input").value
+            var sodium_input = document.getElementById("sodium_input").value
+
+            var net_weight_input = document.getElementById("net_weight_input").value
+            var pcs_input = document.getElementById("pcs_input").value
+
+            var energyPP = calPerPack(energy_input, net_weight_input, pcs_input)
+            var proteinPP = calPerPack(protein_input, net_weight_input, pcs_input)
+            var fatPP = calPerPack(fat_input, net_weight_input, pcs_input)
+            var choPP = calPerPack(cho_input, net_weight_input, pcs_input)
+            var sodiumPP = calPerPack(sodium_input, net_weight_input, pcs_input)
+
+            document.getElementById("energy_per_pack").innerText = energyPP
+            document.getElementById("protein_per_pack").innerText = proteinPP
+            document.getElementById("fat_per_pack").innerText = fatPP
+            document.getElementById("cho_per_pack").innerText = choPP
+            document.getElementById("sodium_per_pack").innerText = sodiumPP
+
+            document.getElementById("energy_per_pack_nrv").innerText = ((energyPP / 8400) * 100).toFixed(2) + "%"
+            document.getElementById("protein_per_pack_nrv").innerText = ((proteinPP / 60) * 100).toFixed(2) + "%"
+            document.getElementById("fat_per_pack_nrv").innerText = ((fatPP / 60) * 100).toFixed(2) + "%"
+            document.getElementById("cho_per_pack_nrv").innerText = ((choPP / 300) * 100).toFixed(2) + "%"
+            document.getElementById("sodium_per_pack_nrv").innerText = ((sodiumPP / 2000) * 100).toFixed(2) + "%"
+        }
+
+        function calPerPack(input, net_weight, pcs) {
+            return (input * net_weight) / (100 * pcs)
+        }
+    </script>
+</head>
+<body>
+
+
+<div class="container">
+    <div>
+        <h2 style="text-align: center">请输入每100g产品的各项含量</h2>
+        <div>
+            <label class="label-text">能量：</label>
+            <input id="energy_input" type="number" placeholder="(单位：kj)">
+        </div>
+        <div>
+            <label class="label-text">蛋白质：</label>
+            <input id="protein_input" type="number" placeholder="(单位：g)">
+        </div>
+        <div>
+            <label class="label-text">脂肪：</label>
+            <input id="fat_input" type="number" placeholder="(单位：g)">
+        </div>
+        <div>
+            <label class="label-text">碳水化合物：</label>
+            <input id="cho_input" type="number" placeholder="(单位：g)">
+        </div>
+        <div>
+            <label class="label-text">钠：</label>
+            <input id="sodium_input" type="number" placeholder="(单位：mg)">
+        </div>
+        <h2 style="text-align: center">规格填写</h2>
+        <div>
+            <label class="label-text">总净含量：</label>
+            <input id="net_weight_input" type="number" placeholder="(单位：g)">
+        </div>
+        <div>
+            <label class="label-text">内含件数：</label>
+            <input id="pcs_input" type="number" placeholder="(单位：件)">
+        </div>
+        <div style="text-align: center">
+            <button style="width: 100px; height: 30px" onclick="calculate()">提交</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div style="text-align: center">
+        <h2 style="text-align: center">结果展示区（每件含量）</h2>
+        <table border="1" style="width: 50%; margin: auto">
+            <tr>
+                <td>营养素</td>
+                <td>每件含量</td>
+                <td>NRV%</td>
+            </tr>
+            <tr>
+                <td>能量</td>
+                <td id="energy_per_pack"></td>
+                <td id="energy_per_pack_nrv"></td>
+            </tr>
+            <tr>
+                <td>蛋白质</td>
+                <td id="protein_per_pack"></td>
+                <td id="protein_per_pack_nrv"></td>
+            </tr>
+            <tr>
+                <td>脂肪</td>
+                <td id="fat_per_pack"></td>
+                <td id="fat_per_pack_nrv"></td>
+            </tr>
+            <tr>
+                <td>碳水化合物</td>
+                <td id="cho_per_pack"></td>
+                <td id="cho_per_pack_nrv"></td>
+            </tr>
+            <tr>
+                <td>钠</td>
+                <td id="sodium_per_pack"></td>
+                <td id="sodium_per_pack_nrv"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+</body>
+</html>
