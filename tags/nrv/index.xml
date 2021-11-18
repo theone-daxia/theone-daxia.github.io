@@ -1,2 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>NRV on 冲和</title><link>http://example.org/tags/nrv/</link><description>Recent content in NRV on 冲和</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 10 Nov 2021 15:22:00 +0800</lastBuildDate><atom:link href="http://example.org/tags/nrv/index.xml" rel="self" type="application/rss+xml"/><item><title>营养素参考值</title><link>http://example.org/blog/nrv/</link><pubDate>Wed, 10 Nov 2021 15:22:00 +0800</pubDate><guid>http://example.org/blog/nrv/</guid><description>NRV 计算 在购买预包装食物时，对是否购买？每天该吃多少？等问题，可通过下面的计算进行快速决策 NRV 计算地址
-营养素参考值</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>NRV on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/nrv/</link>
+    <description>Recent content in NRV on 冲和</description>
+    <image>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/nrv/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>营养素参考值</title>
+      <link>https://theone-daxia.github.io/blog/nrv/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/nrv/</guid>
+      <description>可以查看每日所需营养素的量，计算预包装食物NRV%</description>
+    </item>
+    
+  </channel>
+</rss>
