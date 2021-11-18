@@ -19,9 +19,8 @@
 <span class=caret># _</span>
 <div class=right>
 <nav class=header-nav>
-<a class=path href=/ title>首页</a>
-<a class=path href=/blog/ title>博客</a>
-<a class=path href=/nutrition/ title>营养</a>
+<a class=path href=/ title>Home</a>
+<a class=path href=/blog/ title>Blog</a>
 </nav>
 </div>
 <div class=right>
@@ -34,6 +33,16 @@
 <div class=meta>
 <span class=key>published on</span>
 <span class=val><time itemprop=datePublished datetime=2021-11-17>November 17, 2021</time></span>
+<br>
+<span class=key>tags:</span>
+<span class=val>
+<a href=/tags/hugo>hugo</a>
+<a href=/tags/githubpages>GithubPages</a>
+<a href=/tags/githubactions>GithubActions</a>
+<a href=/tags/utteranc>utteranc</a>
+<a href=/tags/%E8%B0%B7%E6%AD%8C%E5%88%86%E6%9E%90>谷歌分析</a>
+<a href=/tags/%E5%8D%9C%E8%92%9C%E5%AD%90>卜蒜子</a>
+</span>
 </div>
 <h1 class=headline itemprop=headline>利用Hugo搭建静态博客网站记录</h1>
 <div style="padding:0 0 1em">
@@ -217,12 +226,12 @@ jobs:
 <pre tabindex=0><code>googleAnalytics = &quot;G-xxx&quot;
 </code></pre></li>
 <li>
-<p>复制 themes/base16/layouts/partials/header.html 到 layouts/partials/header.html，然后在复制出来的 header.html 的 header 中添加如下代码</p>
+<p>复制 themes/base16/layouts/partials/header.html 到 layouts/partials/header.html，然后在复制出来的 header.html 的 head 标签中添加如下代码</p>
 <pre tabindex=0><code>&lt;!-- 添加谷歌分析插件 Google Analytics --&gt;
 {{ template &quot;_internal/google_analytics.html&quot; . }}
 </code></pre><p>注：该 template 为 Hugo 附带的一个<a href=https://gohugo.io/templates/internal/>内部模板</a></p>
 <hr>
-<p>如果不采用内部模板的写法，还可以将创建数据流时，提示的分析代码添加进 header 中，不过这种方法明显没有内部模板的方式优雅</p>
+<p>如果不采用内部模板的写法，还可以将创建数据流时，提示的分析代码添加进 head 标签中，不过这种方法明显没有内部模板的方式优雅</p>
 <pre tabindex=0><code>&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
 &lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-xxx&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -242,7 +251,7 @@ jobs:
 <p>步骤：</p>
 <ol>
 <li>
-<p>在 layouts/partials/header.html 的 header 中添加如下代码</p>
+<p>在 layouts/partials/header.html 的 head 标签中添加如下代码</p>
 <pre tabindex=0><code>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
 </code></pre></li>
 <li>
