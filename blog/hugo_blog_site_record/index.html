@@ -2,12 +2,12 @@
 <head>
 <meta charset=utf-8>
 <meta name=description content>
-<meta name=generator content="Hugo 0.89.3">
+<meta name=generator content="Hugo 0.89.4">
 <meta name=viewport content="width=device-width,initial-scale=1">
 <link rel=stylesheet href=/css/style.css type=text/css>
 <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700" type=text/css>
 <link rel=alternate href=/index.xml type=application/rss+xml title=冲和>
-<title>Hugo:静态博客网站搭建记录 - 冲和</title>
+<title>利用Hugo搭建静态博客网站记录 - 冲和</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YBNN92PXEM"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-YBNN92PXEM',{anonymize_ip:!1})}</script>
 <script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script>
@@ -35,7 +35,7 @@
 <span class=key>published on</span>
 <span class=val><time itemprop=datePublished datetime=2021-11-17>November 17, 2021</time></span>
 </div>
-<h1 class=headline itemprop=headline>Hugo:静态博客网站搭建记录</h1>
+<h1 class=headline itemprop=headline>利用Hugo搭建静态博客网站记录</h1>
 <div style="padding:0 0 1em">
 <span id=busuanzi_container_page_pv><svg xmlns="http://www.w3.org/2000/svg" width="19" height="14" viewBox="0 0 20 20" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
 <span id=busuanzi_value_page_pv></span>
@@ -53,7 +53,7 @@
 <h2 id=准备工作>准备工作</h2>
 <ul>
 <li>拥有一个 github 账号</li>
-<li>安装 hugo（ 参考文档：https://gohugo.io/getting-started/installing/ ）</li>
+<li>安装 hugo（ <a href=https://gohugo.io/getting-started/quick-start/>Hugo文档</a> ）</li>
 </ul>
 <h2 id=步骤>步骤</h2>
 <h3 id=github-创建两个仓库>github 创建两个仓库</h3>
@@ -67,31 +67,205 @@
 </ol>
 <pre tabindex=0><code>hugo new site quickstart
 </code></pre><ol start=2>
-<li>选择并添加一款心仪主题（ 主题选择：https://themes.gohugo.io/ ）</li>
+<li>选择并添加一款心仪主题（ <a href=https://themes.gohugo.io/>主题选择</a> ）</li>
 </ol>
 <pre tabindex=0><code># 此处以 Base16 主题为例
 
-cd quickstart
-git submodule add 
+cd quickstart/themes
+git submodule add https://github.com/htdvisser/hugo-base16-theme.git base16
 </code></pre><ol start=3>
 <li>添加博客内容</li>
 </ol>
 <pre tabindex=0><code>hugo new blogs/my-first-blog.md
 </code></pre><ol start=4>
-<li>
-<p>配置菜单</p>
-</li>
-<li>
-<p>将 quickstart 目录里的内容 push 到源码项目，完成项目初始化</p>
-</li>
+<li>编辑配置文件 config.toml，配置主题及菜单</li>
+</ol>
+<pre tabindex=0><code># 将下面内容添加进 config.toml（不包括本行）
+
+theme = &quot;base16&quot;
+
+[menu]
+[[menu.main]]
+    name = &quot;首页&quot;
+    url = &quot;/&quot;
+    weight = 1
+
+[[menu.main]]
+    name = &quot;博客&quot;
+    url = &quot;/blog/&quot;
+    weight = 2
+</code></pre><ol start=5>
+<li>将 quickstart 目录里的内容 push 到源码项目，完成项目初始化</li>
 </ol>
 <h3 id=配置-cicd>配置 CI/CD</h3>
 <p>可采用 <code>hugo -D</code> 来生成静态页面，然后同步到公开的博客仓库。
-但这明显不符合极客精神，所以采用 GithubActions 来自动集成部署。</p>
+这样做不仅麻烦，也不符合极客精神，所以采用 GithubActions 来自动集成部署。</p>
+<p>配置步骤：</p>
+<ol>
+<li>
+<p>源码项目根目录下，添加 .github/workflows 文件夹</p>
+</li>
+<li>
+<p>在刚创建的文件夹下创建 gh-pages.yml 文件（文件名随便写），写入如下代码</p>
+<pre tabindex=0><code>name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          external_repository: xxx/xxx.github.io	# 发布到哪个repo
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./public	# 注意这里指的是要发布哪个文件夹的内容，而不是指发布到目的仓库的什么位置，因为hugo默认生成静态网页到public文件夹，所以这里发布public文件夹里的内容
+          publish_branch: main	# 发布到哪个branch
+</code></pre><hr>
+<p><strong>注：</strong> 此处的 ACTIONS_DEPLOY_KEY 需要在源码仓库中配置，具体步骤如下</p>
+<ul>
+<li>
+<p>生成一对新的 SSH Key <code>sshkey-gen -t rsa</code></p>
+</li>
+<li>
+<p>将 Public Key 添加到 xxx.github.io 仓库，setting -> Deploy Keys，变量名随便起。</p>
+</li>
+<li>
+<p>将 Private Key 添加到源码仓库，setting -> Secrets，变量名取 ACTIONS_DEPLOY_KEY</p>
+</li>
+</ul>
+<hr>
+<p><strong>另：</strong> Github Actions 的三种实现方案</p>
+<ul>
+<li>
+<p>github_token</p>
+</li>
+<li>
+<p>deploy_key</p>
+</li>
+<li>
+<p>personal_token</p>
+<p>github_token 适合 源码 和 public/ 存放在同一个仓库下的不同分支（比如源码在 main，public/ 内容在 gh-pages），指定部署到 gh-pages 分支即可。</p>
+<p>deploy_key 适合 源码 和 public/ 存放在不同仓库下的模式（此为本文选择的方式）。</p>
+</li>
+</ul>
+</li>
+</ol>
 <h3 id=添加附加功能>添加附加功能</h3>
 <h4 id=文章支持评论>文章支持评论</h4>
+<p>可选择 disqus、utteranc，由于 disqus 比较麻烦，得注册账号，好像还收费？所以选择 utteranc。</p>
+<p>utteranc 是一个免费的 GithubApp，可以在 Github 的 <a href=https://github.com/marketplace>Marketplace</a> 中获取，具体操作不再赘述。
+下载后绑定到公开的博客仓库，然后在 layouts/partials/article.html 的合适位置添加如下代码</p>
+<pre tabindex=0><code>{{ if .Site.Params.utteranc.enable }}
+&lt;script src=&quot;https://utteranc.es/client.js&quot;
+        repo=&quot;{{ .Site.Params.utteranc.repo }}&quot;
+        issue-term=&quot;{{ .Site.Params.utteranc.issueTerm }}&quot;
+        theme=&quot;{{ .Site.Params.utteranc.theme }}&quot;
+        crossorigin=&quot;anonymous&quot;
+        async&gt;
+&lt;/script&gt;
+{{ end }}
+</code></pre><p>在 config.toml 中添加如下配置</p>
+<pre tabindex=0><code>[params.utteranc]
+    enable = false
+    repo = &quot;xxx/xxx.github.io&quot;
+    issueTerm = &quot;title&quot;
+    theme = &quot;github-light&quot;
+</code></pre><p>由于最终显示效果不理想</p>
+<ul>
+<li>个人感觉不好看，跟主题风格不搭</li>
+<li>评论区域加载速度慢，进入文章几秒后才会出现</li>
+<li>个人也不打算在博客文章里跟人交流</li>
+</ul>
+<p>故将 utteranc.enable 置为 false，想启用的时候再说。</p>
 <h4 id=添加谷歌分析>添加谷歌分析</h4>
+<p>谷歌分析是由Google提供的个人免费的网站流量统计服务，支持查看实时流量，分析功能强大。网页和移动端均可查看（需要有vpn）</p>
+<p>使用步骤：</p>
+<ol>
+<li>
+<p>登陆谷歌分析（ <a href=https://analytics.google.com>登陆地址</a> ），创建账号及媒体资源</p>
+</li>
+<li>
+<p>在创建的媒体资源里，添加数据流（选择网站）</p>
+<ul>
+<li>网站网址：填写博客仓库地址，即 xxx.github.io</li>
+<li>数据流名称：自己命名</li>
+</ul>
+</li>
+<li>
+<p>复制数据流的衡量ID（G-xxx），并将其添加进源码项目的 config.toml 中</p>
+<pre tabindex=0><code>googleAnalytics = &quot;G-xxx&quot;
+</code></pre></li>
+<li>
+<p>复制 themes/base16/layouts/partials/header.html 到 layouts/partials/header.html，然后在复制出来的 header.html 的 header 中添加如下代码</p>
+<pre tabindex=0><code>&lt;!-- 添加谷歌分析插件 Google Analytics --&gt;
+{{ template &quot;_internal/google_analytics.html&quot; . }}
+</code></pre><p>注：该 template 为 Hugo 附带的一个<a href=https://gohugo.io/templates/internal/>内部模板</a></p>
+<hr>
+<p>如果不采用内部模板的写法，还可以将创建数据流时，提示的分析代码添加进 header 中，不过这种方法明显没有内部模板的方式优雅</p>
+<pre tabindex=0><code>&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-xxx&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-xxx');
+&lt;/script&gt;
+</code></pre></li>
+<li>
+<p>推到源码项目并自动部署后，访问博客，即可在谷歌分析的实时数据中看到统计信息</p>
+</li>
+</ol>
 <h4 id=添加卜蒜子>添加卜蒜子</h4>
+<p><a href=https://busuanzi.ibruce.info/>卜蒜子</a> 是一个静态页面计数服务，可显示 page_uv、page_pv、site_uv、site_pv 等数据（ <a href=http://ibruce.info/2015/04/04/busuanzi/>卜蒜子文档</a> ）。这里利用它给文章加上 page_uv。</p>
+<p>步骤：</p>
+<ol>
+<li>
+<p>在 layouts/partials/header.html 的 header 中添加如下代码</p>
+<pre tabindex=0><code>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt;&lt;/script&gt;
+</code></pre></li>
+<li>
+<p>在 layouts/partials/article.html 的 Title 下面添加如下代码</p>
+<pre tabindex=0><code>{{ if .Site.Params.busuanzi.enable }}
+&lt;div style=&quot;padding: 0 0 1em 0&quot;&gt;
+    &lt;span id=&quot;busuanzi_container_page_pv&quot;&gt;
+        &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;19&quot; height=&quot;14&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; class=&quot;feather feather-eye&quot;&gt;&lt;path d=&quot;M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z&quot;&gt;&lt;/path&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;3&quot;&gt;&lt;/circle&gt;&lt;/svg&gt;
+        &lt;span id=&quot;busuanzi_value_page_pv&quot;&gt;&lt;/span&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+{{ end }}
+</code></pre><p>注：这个小眼睛的 svg 文件，是从 <a href=https://feathericons.com/>这里</a> 下载的，感觉很好用。</p>
+</li>
+<li>
+<p>在 config.toml 中添加如下配置</p>
+<pre tabindex=0><code>[params.busuanzi]
+    enable = true
+</code></pre></li>
+<li>
+<p>推到源码项目并自动部署后，访问博客，即可在文章的标题下看到统计信息</p>
+</li>
+</ol>
 </section>
 </article>
 </main>
