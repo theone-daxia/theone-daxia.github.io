@@ -71,6 +71,18 @@
     <loc>https://theone-daxia.github.io/blog/nrv/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://theone-daxia.github.io/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://theone-daxia.github.io/fr/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theone-daxia.github.io/archives/"
+                />
+  </url><url>
     <loc>https://theone-daxia.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -86,6 +98,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://theone-daxia.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://theone-daxia.github.io/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://theone-daxia.github.io/fr/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://theone-daxia.github.io/search/"
                 />
   </url><url>
     <loc>https://theone-daxia.github.io/series/</loc>
