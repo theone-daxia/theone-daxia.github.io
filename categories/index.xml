@@ -8,6 +8,16 @@
       <url>https://theone-daxia.github.io/papermod-cover.png</url>
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://theone-daxia.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 10 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>营养</title>
+      <link>https://theone-daxia.github.io/categories/%E8%90%A5%E5%85%BB/</link>
+      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/categories/%E8%90%A5%E5%85%BB/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
