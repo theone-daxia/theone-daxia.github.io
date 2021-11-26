@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>冲和</title>
-    <link>https://theone-daxia.github.io/</link>
-    <description>Recent content on 冲和</description>
+    <title>胎菊 on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/%E8%83%8E%E8%8F%8A/</link>
+    <description>Recent content in 胎菊 on 冲和</description>
     <image>
       <url>https://theone-daxia.github.io/papermod-cover.png</url>
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/%E8%83%8E%E8%8F%8A/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>胎菊</title>
       <link>https://theone-daxia.github.io/blog/tea/taiju/</link>
@@ -30,28 +30,6 @@
 2. 上火 胎菊性微寒，阴虚火热体质的人喝多了会引起上火现象。
 3. 脾胃受损，食欲减退 喝多了胎菊容易引起胃部不适，导致反酸，肠胃分泌液不正常，可能引起食欲减退的情况。因此脾胃虚寒的人更加不能多喝胎菊，容易损伤脾胃。</description>
     </item>
-    
-    <item>
-      <title>利用Hugo搭建静态博客网站记录</title>
-      <link>https://theone-daxia.github.io/blog/hugo_blog_site_record/</link>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theone-daxia.github.io/blog/hugo_blog_site_record/</guid>
-      <description>记录建站过程</description>
-    </item>
-    
-    <item>
-      <title>营养素参考值</title>
-      <link>https://theone-daxia.github.io/blog/nrv/</link>
-      <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://theone-daxia.github.io/blog/nrv/</guid>
-      <description>可以查看每日所需营养素的量，计算预包装食物NRV%</description>
-    </item>
-    
-    
-    
-    
     
   </channel>
 </rss>
