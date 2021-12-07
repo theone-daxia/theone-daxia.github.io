@@ -98,6 +98,21 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>hugo支持数学公式排版
+</h2>
+</header>
+<section class=entry-content>
+<p>当前环境 hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark） 下面介绍配置 KaTeX 步骤
+添加 math partial 创建一个 math partial，路径为：/layouts/partials/math.html
+给 math partial 添加内容 在 /layouts/partials/math.html 文件里添加如下内容（ 参考 Auto-render Extension ）
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous"> &lt;script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous">&lt;/script> &lt;script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);">&lt;/script> 只添加上述内容的话，就会只支持 block 公式，为了支持 inline 公式，还要在下方加入如下内容
+&lt;script> document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true} ], // • rendering keys, e....</p>
+</section>
+<footer class=entry-footer><span title="2021-12-07 00:00:00 +0000 UTC">December 7, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
+<a class=entry-link aria-label="post link to hugo支持数学公式排版" href=https://theone-daxia.github.io/blog/math_typesetting/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>胎菊
 </h2>
 </header>

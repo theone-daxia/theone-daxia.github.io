@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>markdown on 冲和</title>
+    <link>https://theone-daxia.github.io/categories/markdown/</link>
+    <description>Recent content in markdown on 冲和</description>
+    <image>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo支持数学公式排版</title>
+      <link>https://theone-daxia.github.io/blog/math_typesetting/</link>
+      <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/math_typesetting/</guid>
+      <description>当前环境  hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark）  下面介绍配置 KaTeX 步骤
+添加 math partial 创建一个 math partial，路径为：/layouts/partials/math.html
+给 math partial 添加内容 在 /layouts/partials/math.html 文件里添加如下内容（ 参考 Auto-render Extension ）
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34; onload=&amp;#34;renderMathInElement(document.body);&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 只添加上述内容的话，就会只支持 block 公式，为了支持 inline 公式，还要在下方加入如下内容
+&amp;lt;script&amp;gt; document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() { renderMathInElement(document.body, { // customised options  // • auto-render specific keys, e.g.:  delimiters: [ {left: &amp;#39;$$&amp;#39;, right: &amp;#39;$$&amp;#39;, display: true}, {left: &amp;#39;$&amp;#39;, right: &amp;#39;$&amp;#39;, display: false}, {left: &amp;#39;\\(&amp;#39;, right: &amp;#39;\\)&amp;#39;, display: false}, {left: &amp;#39;\\[&amp;#39;, right: &amp;#39;\\]&amp;#39;, display: true} ], // • rendering keys, e.</description>
+    </item>
+    
+  </channel>
+</rss>
