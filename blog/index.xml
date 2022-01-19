@@ -9,7 +9,19 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 go 写个简单的 shell</title>
+      <link>https://theone-daxia.github.io/blog/code/shell_in_go/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/shell_in_go/</guid>
+      <description>什么是 shell shell 就是一个支持输入命令，并显示出命令的输出的东西
+用 go 来写个简单的 shell 并使用它 步骤
+ 编写代码 build 出二进制文件，并将路径添加到 /etc/shells 里面 更换使用的 shell，退出重进（chsc -s xxx）   完整代码如下
+package main import ( &amp;#34;bufio&amp;#34; &amp;#34;errors&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;strings&amp;#34; ) func main() { reader := bufio.NewReader(os.Stdin) for { fmt.Print(&amp;#34;&amp;gt; &amp;#34;) // Read the keyboad input 	input, err := reader.ReadString(&amp;#39;\n&amp;#39;) if err != nil { fmt.Fprintln(os.Stderr, err) } // Handle the execution of the input 	if err = execInput(input); err !</description>
+    </item>
+    
     <item>
       <title>一个陌生女人的来信</title>
       <link>https://theone-daxia.github.io/blog/drama/letter_from_a_strange_woman/</link>
@@ -36,10 +48,10 @@
     
     <item>
       <title>hugo支持数学公式排版</title>
-      <link>https://theone-daxia.github.io/blog/math_typesetting/</link>
+      <link>https://theone-daxia.github.io/blog/code/math_typesetting/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/math_typesetting/</guid>
+      <guid>https://theone-daxia.github.io/blog/code/math_typesetting/</guid>
       <description>当前环境  hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark）  下面介绍配置 KaTeX 步骤
 添加 math partial 创建一个 math partial，路径为：/layouts/partials/math.html
 给 math partial 添加内容 在 /layouts/partials/math.html 文件里添加如下内容（ 参考 Auto-render Extension ）
@@ -70,10 +82,10 @@
     
     <item>
       <title>SSH 端口转发</title>
-      <link>https://theone-daxia.github.io/blog/ssh_tunnel/</link>
+      <link>https://theone-daxia.github.io/blog/code/ssh_tunnel/</link>
       <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/ssh_tunnel/</guid>
+      <guid>https://theone-daxia.github.io/blog/code/ssh_tunnel/</guid>
       <description>简介 SSH 除了登陆服务器，还有一大用途，就是作为加密通信的中介，充当两台服务器之间的加密跳板，使得原本不加密的通信变成加密通信。 这个功能成为端口转发（port forwarding），又称 SSH 隧道（tunnel）。
 端口转发有两个主要作用：
  将不加密的数据放在 SSH 安全连接里传输，使原本不安全的网络服务增加了安全性，比如通过端口转发访问 Telnet、FTP 等明文服务，数据传输就都会加密。 作为数据通信的加密跳板，绕过网络防火墙。  三种使用方法 端口转发有三种使用方法：动态转发、本地转发、远程转发。
@@ -90,19 +102,19 @@ curl -x socks5://localhost:8080 https://www.</description>
     
     <item>
       <title>利用Hugo搭建静态博客网站记录</title>
-      <link>https://theone-daxia.github.io/blog/hugo_blog_site_record/</link>
+      <link>https://theone-daxia.github.io/blog/code/hugo_blog_site_record/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/hugo_blog_site_record/</guid>
+      <guid>https://theone-daxia.github.io/blog/code/hugo_blog_site_record/</guid>
       <description>记录建站过程</description>
     </item>
     
     <item>
       <title>营养素参考值</title>
-      <link>https://theone-daxia.github.io/blog/nrv/</link>
+      <link>https://theone-daxia.github.io/blog/health/nrv/</link>
       <pubDate>Wed, 10 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/nrv/</guid>
+      <guid>https://theone-daxia.github.io/blog/health/nrv/</guid>
       <description>可以查看每日所需营养素的量，计算预包装食物NRV%</description>
     </item>
     

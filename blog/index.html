@@ -16,7 +16,7 @@
 <link rel=mask-icon href=https://theone-daxia.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.91.2">
+<meta name=generator content="Hugo 0.92.0">
 <link rel=alternate type=application/rss+xml href=https://theone-daxia.github.io/blog/index.xml>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
@@ -79,6 +79,20 @@
 </header>
 <article class=post-entry>
 <header class=entry-header>
+<h2>用 go 写个简单的 shell
+</h2>
+</header>
+<section class=entry-content>
+<p>什么是 shell shell 就是一个支持输入命令，并显示出命令的输出的东西
+用 go 来写个简单的 shell 并使用它 步骤
+编写代码 build 出二进制文件，并将路径添加到 /etc/shells 里面 更换使用的 shell，退出重进（chsc -s xxx） 完整代码如下
+package main import ( "bufio" "errors" "fmt" "os" "os/exec" "strings" ) func main() { reader := bufio.NewReader(os.Stdin) for { fmt.Print("> ") // Read the keyboad input input, err := reader.ReadString('\n') if err != nil { fmt.Fprintln(os.Stderr, err) } // Handle the execution of the input if err = execInput(input); err !...</p>
+</section>
+<footer class=entry-footer><span title="2022-01-19 00:00:00 +0000 UTC">January 19, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;冲和</footer>
+<a class=entry-link aria-label="post link to 用 go 写个简单的 shell" href=https://theone-daxia.github.io/blog/code/shell_in_go/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>一个陌生女人的来信
 </h2>
 </header>
@@ -118,7 +132,7 @@
 &lt;script> document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true} ], // • rendering keys, e....</p>
 </section>
 <footer class=entry-footer><span title="2021-12-07 00:00:00 +0000 UTC">December 7, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
-<a class=entry-link aria-label="post link to hugo支持数学公式排版" href=https://theone-daxia.github.io/blog/math_typesetting/></a>
+<a class=entry-link aria-label="post link to hugo支持数学公式排版" href=https://theone-daxia.github.io/blog/code/math_typesetting/></a>
 </article>
 <article class=post-entry>
 <header class=entry-header>
@@ -143,28 +157,6 @@
 <footer class=entry-footer><span title="2021-11-26 00:00:00 +0000 UTC">November 26, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
 <a class=entry-link aria-label="post link to 胎菊" href=https://theone-daxia.github.io/blog/tea/taiju/></a>
 </article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>SSH 端口转发
-</h2>
-</header>
-<section class=entry-content>
-<p>简介 SSH 除了登陆服务器，还有一大用途，就是作为加密通信的中介，充当两台服务器之间的加密跳板，使得原本不加密的通信变成加密通信。 这个功能成为端口转发（port forwarding），又称 SSH 隧道（tunnel）。
-端口转发有两个主要作用：
-将不加密的数据放在 SSH 安全连接里传输，使原本不安全的网络服务增加了安全性，比如通过端口转发访问 Telnet、FTP 等明文服务，数据传输就都会加密。 作为数据通信的加密跳板，绕过网络防火墙。 三种使用方法 端口转发有三种使用方法：动态转发、本地转发、远程转发。
-1. 动态转发 动态转发是指，本机与 SSH 服务器之间创建了一个加密连接，本机内部针对某个端口的通信，都通过这个加密连接转发。
-动态转发将一个本地端口绑定到了 SSH 服务器，而 目标地址:目标端口 是不固定的，完全由发起的请求决定，所以叫动态转发。
-ssh -D local-port tunnel-host -N 上面命令中，-D表示动态转发，local-port是本地端口，tunnel-host是 SSH 服务器， -N表示这个 SSH 连接只进行端口转发，不登录远程 Shell，不能执行远程命令，只能充当隧道。
-如果经常使用动态转发，可以将设置写入 SSH 客户端的个人配置文件（~/.ssh/config）
-DynamicForward tunnel-host:local-port 应用举例 例1：
-远程云主机B1运行了多个服务，分别使用了不同端口，本地主机A1需要访问这些服务。 一方面，由于安全限制，本地主机A1并不能直接访问远程云主机B1上的服务，因此需要进行端口转发， 另一方面，为每个端口分别创建本地端口转发非常麻烦。
-可通过动态端口转发，将A1发起的请求转发到B1，命令如下：
-ssh -D localhost:8080 root@xxx.xxx.xxx.xxx -N 注意，这种转发采用了 SOCKS5 协议，访问网站时，需要把 HTTP 请求转成 SOCKS5 协议，才能把本地端口的请求转发出去。 下面是 SSH 隧道建立后的一个使用示例：
-curl -x socks5://localhost:8080 https://www....</p>
-</section>
-<footer class=entry-footer><span title="2021-11-24 00:00:00 +0000 UTC">November 24, 2021</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;冲和</footer>
-<a class=entry-link aria-label="post link to SSH 端口转发" href=https://theone-daxia.github.io/blog/ssh_tunnel/></a>
-</article>
 <footer class=page-footer>
 <nav class=pagination>
 <a class=next href=https://theone-daxia.github.io/blog/page/2/>Next Page »</a>
@@ -172,7 +164,7 @@ curl -x socks5://localhost:8080 https://www....</p>
 </footer>
 </main>
 <footer class=footer>
-<span>&copy; 2021 <a href=https://theone-daxia.github.io/>冲和</a></span>
+<span>&copy; 2022 <a href=https://theone-daxia.github.io/>冲和</a></span>
 <span>
 Powered by
 <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &

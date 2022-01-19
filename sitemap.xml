@@ -3,18 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theone-daxia.github.io/blog/</loc>
-    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/</loc>
-    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/go/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/categories/go/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/shell/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/</loc>
-    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theone-daxia.github.io/blog/drama/letter_from_a_strange_woman/</loc>
-    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/blog/code/shell_in_go/</loc>
+    <lastmod>2022-01-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/blog/drama/letter_from_a_strange_woman/</loc>
     <lastmod>2021-12-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/%E5%AD%9F%E4%BA%AC%E8%BE%89/</loc>
@@ -44,7 +56,7 @@
     <loc>https://theone-daxia.github.io/tags/goldmark/</loc>
     <lastmod>2021-12-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theone-daxia.github.io/blog/math_typesetting/</loc>
+    <loc>https://theone-daxia.github.io/blog/code/math_typesetting/</loc>
     <lastmod>2021-12-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/katex/</loc>
@@ -80,7 +92,7 @@
     <loc>https://theone-daxia.github.io/tags/ssh-%E7%AB%AF%E5%8F%A3%E8%BD%AC%E5%8F%91/</loc>
     <lastmod>2021-11-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theone-daxia.github.io/blog/ssh_tunnel/</loc>
+    <loc>https://theone-daxia.github.io/blog/code/ssh_tunnel/</loc>
     <lastmod>2021-11-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
@@ -98,7 +110,7 @@
     <loc>https://theone-daxia.github.io/tags/utteranc/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theone-daxia.github.io/blog/hugo_blog_site_record/</loc>
+    <loc>https://theone-daxia.github.io/blog/code/hugo_blog_site_record/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/%E5%8D%9C%E8%92%9C%E5%AD%90/</loc>
@@ -116,7 +128,7 @@
     <loc>https://theone-daxia.github.io/categories/%E8%90%A5%E5%85%BB/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theone-daxia.github.io/blog/nrv/</loc>
+    <loc>https://theone-daxia.github.io/blog/health/nrv/</loc>
     <lastmod>2021-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/follow_me/</loc>

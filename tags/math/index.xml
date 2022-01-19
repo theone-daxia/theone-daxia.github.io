@@ -12,10 +12,10 @@
     <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo支持数学公式排版</title>
-      <link>https://theone-daxia.github.io/blog/math_typesetting/</link>
+      <link>https://theone-daxia.github.io/blog/code/math_typesetting/</link>
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/math_typesetting/</guid>
+      <guid>https://theone-daxia.github.io/blog/code/math_typesetting/</guid>
       <description>当前环境  hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark）  下面介绍配置 KaTeX 步骤
 添加 math partial 创建一个 math partial，路径为：/layouts/partials/math.html
 给 math partial 添加内容 在 /layouts/partials/math.html 文件里添加如下内容（ 参考 Auto-render Extension ）

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>go on 冲和</title>
+    <link>https://theone-daxia.github.io/categories/go/</link>
+    <description>Recent content in go on 冲和</description>
+    <image>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>用 go 写个简单的 shell</title>
+      <link>https://theone-daxia.github.io/blog/code/shell_in_go/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/shell_in_go/</guid>
+      <description>什么是 shell shell 就是一个支持输入命令，并显示出命令的输出的东西
+用 go 来写个简单的 shell 并使用它 步骤
+ 编写代码 build 出二进制文件，并将路径添加到 /etc/shells 里面 更换使用的 shell，退出重进（chsc -s xxx）   完整代码如下
+package main import ( &amp;#34;bufio&amp;#34; &amp;#34;errors&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;strings&amp;#34; ) func main() { reader := bufio.NewReader(os.Stdin) for { fmt.Print(&amp;#34;&amp;gt; &amp;#34;) // Read the keyboad input 	input, err := reader.ReadString(&amp;#39;\n&amp;#39;) if err != nil { fmt.Fprintln(os.Stderr, err) } // Handle the execution of the input 	if err = execInput(input); err !</description>
+    </item>
+    
+  </channel>
+</rss>

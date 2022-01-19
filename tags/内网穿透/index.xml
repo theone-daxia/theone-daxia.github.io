@@ -12,10 +12,10 @@
     <lastBuildDate>Wed, 24 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH 端口转发</title>
-      <link>https://theone-daxia.github.io/blog/ssh_tunnel/</link>
+      <link>https://theone-daxia.github.io/blog/code/ssh_tunnel/</link>
       <pubDate>Wed, 24 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/ssh_tunnel/</guid>
+      <guid>https://theone-daxia.github.io/blog/code/ssh_tunnel/</guid>
       <description>简介 SSH 除了登陆服务器，还有一大用途，就是作为加密通信的中介，充当两台服务器之间的加密跳板，使得原本不加密的通信变成加密通信。 这个功能成为端口转发（port forwarding），又称 SSH 隧道（tunnel）。
 端口转发有两个主要作用：
  将不加密的数据放在 SSH 安全连接里传输，使原本不安全的网络服务增加了安全性，比如通过端口转发访问 Telnet、FTP 等明文服务，数据传输就都会加密。 作为数据通信的加密跳板，绕过网络防火墙。  三种使用方法 端口转发有三种使用方法：动态转发、本地转发、远程转发。
