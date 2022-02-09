@@ -15,7 +15,7 @@
 <link rel=mask-icon href=https://theone-daxia.github.io/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.0">
+<meta name=generator content="Hugo 0.92.1">
 <link rel=alternate type=application/rss+xml href=https://theone-daxia.github.io/index.xml>
 <link rel=alternate type=application/json href=https://theone-daxia.github.io/index.json>
 <noscript>
@@ -98,6 +98,28 @@
 </article>
 <article class=post-entry>
 <header class=entry-header>
+<h2>从别后
+</h2>
+</header>
+<section class=entry-content>
+<p> 一片云落入掌心 渺渺万里何处去 只记取离别时的你 仍年少意气 转身过一入天际 愿我如那时的风 拂去尘世俗名轻拥着你 碧落箫声吹尽 沧海一遇却难找寻 前路崇山峻岭不再有你同行 纵使微茫如烟纵有万般思念 流光总将故人搁浅在断简残篇 不成眠 不等谁来证明不必狂歌痛饮 唯盼重相见 归来时一醉明月 这片云不知归期 渺渺万里何处去 只记取离别时的你 仍年少意气 经年过却难忘记 愿我如那时的风 拂去尘世俗名轻拥着你 苍穹箫声吹尽 此生魂梦已逐君去 前路崇山峻岭不再有你同行 纵使微茫如烟纵有万般思念 流光总将古人搁浅在断简残篇 不成眠 不等谁来证明不必狂歌痛饮 唯盼重相见 我如倦鸟归林 纵使微茫如烟纵有万般思念 流光总将故人搁浅在断简残篇 不成眠 不理白驹过隙不信生死有命 唯盼重相见 归来时一醉明月 </p>
+</section>
+<footer class=entry-footer><span title="2022-02-09 00:00:00 +0000 UTC">February 9, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
+<a class=entry-link aria-label="post link to 从别后" href=https://theone-daxia.github.io/blog/music/doupo_s1/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
+<h2>远行人
+</h2>
+</header>
+<section class=entry-content>
+<p> 月光光 照四方 照遍人间水茫茫 风又急 浪又高 妻离子散各一方 山遥遥 水迢迢 会生会死在今朝 心慌慌 意茫茫 天涯明月何皎皎 月光光 照四方 照遍人间水茫茫 风又急 浪又高 妻离子散各一方 山遥遥 水迢迢 会生会死在今朝 心慌慌 意茫茫 天涯明月何皎皎 风一程 雨一程 山河路远不相逢 青鳞快 离愁浓 一梦黄粱太匆匆 江流阔 血流红 白浪滔滔任西东 江湖暗 星河明 轻舟此去不顾停 </p>
+</section>
+<footer class=entry-footer><span title="2022-02-09 00:00:00 +0000 UTC">February 9, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
+<a class=entry-link aria-label="post link to 远行人" href=https://theone-daxia.github.io/blog/music/chenshixing/></a>
+</article>
+<article class=post-entry>
+<header class=entry-header>
 <h2>用 go 写个简单的 shell
 </h2>
 </header>
@@ -137,44 +159,6 @@ package main import ( "bufio" "errors" "fmt" "os" "os/exec" "strings" ) func mai
 </section>
 <footer class=entry-footer><span title="2021-12-27 00:00:00 +0000 UTC">December 27, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
 <a class=entry-link aria-label="post link to 生日蛋糕" href=https://theone-daxia.github.io/blog/food/birthday_cake/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>hugo支持数学公式排版
-</h2>
-</header>
-<section class=entry-content>
-<p>当前环境 hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark） 下面介绍配置 KaTeX 步骤
-添加 math partial 创建一个 math partial，路径为：/layouts/partials/math.html
-给 math partial 添加内容 在 /layouts/partials/math.html 文件里添加如下内容（ 参考 Auto-render Extension ）
-&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous"> &lt;script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous">&lt;/script> &lt;script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous" onload="renderMathInElement(document.body);">&lt;/script> 只添加上述内容的话，就会只支持 block 公式，为了支持 inline 公式，还要在下方加入如下内容
-&lt;script> document.addEventListener("DOMContentLoaded", function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}, {left: '\\(', right: '\\)', display: false}, {left: '\\[', right: '\\]', display: true} ], // • rendering keys, e....</p>
-</section>
-<footer class=entry-footer><span title="2021-12-07 00:00:00 +0000 UTC">December 7, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
-<a class=entry-link aria-label="post link to hugo支持数学公式排版" href=https://theone-daxia.github.io/blog/code/math_typesetting/></a>
-</article>
-<article class=post-entry>
-<header class=entry-header>
-<h2>胎菊
-</h2>
-</header>
-<section class=entry-content>
-<p>缘起 发现最近总是便秘，两三天都不"上大号"，今早起床突然意识到可能是我一直喝胎菊茶造成的。 一查，果然！
-看下面的功效及副作用可知，适量喝可促进消化，预防便秘，但是喝多了，则会出现反效果，还容易损伤脾胃，出现食欲减退的情况。
-这完美的解释了为啥刚开始喝的时候，记得还是作息饮食规律，每天早上都"大号排毒"，最近却经常便秘，且不见好转，吃健胃消食片也没多大用。 不过怎样才算"喝多了"，以我的情况来看，每天 8～10 朵，不断冲泡，喝上 6～8 杯，连续喝 3～4 个月，就算喝多了。
-简介 胎菊又称甘菊、小胎黄、小白菊，古时曾作贡品，是杭白菊中最上品的一种。 在杭白菊花朵未完全张开的时候摘下来，经干燥加工制成。
-胎菊，性微寒，味辛甘苦，能疏散风热、平肝明目、清热解毒。 用胎菊泡茶，味纯正，浓烈，色泽金黄，含有花蜜的清香，泡久了也不会散开。
-功效 1. 明目 胎菊具有很好的护眼、明目的作用，特别适合上班族等长时间面对电脑的人群。
-2. 补肝、清肝 胎菊具有清热解毒的作用，还能增强身体的抵抗力，预防冠心病等。 胎菊和冰糖一起浸泡，还能起到抗菌作用。
-3. 祛除湿气 一般而言，体内湿气过重的症状表现为口干舌燥、眼睛干涩、上火等，此时可泡一杯胎菊茶来缓解。
-4. 缓解便秘 胎菊花富含丹宁，这种物质能有效促进肠胃蠕动，很好的增强身体的消化能力和食欲，让便秘得到缓解。
-副作用 虽然胎菊有保健的功效，但如果长期服用也不好，会引起身体不适。
-1. 腹痛腹泻 胎菊可以促进消化，但喝多了则会出现反效果，导致肠胃出现寒凉之气，出现腹痛腹泻的现象。
-2. 上火 胎菊性微寒，阴虚火热体质的人喝多了会引起上火现象。
-3. 脾胃受损，食欲减退 喝多了胎菊容易引起胃部不适，导致反酸，肠胃分泌液不正常，可能引起食欲减退的情况。因此脾胃虚寒的人更加不能多喝胎菊，容易损伤脾胃。</p>
-</section>
-<footer class=entry-footer><span title="2021-11-26 00:00:00 +0000 UTC">November 26, 2021</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;冲和</footer>
-<a class=entry-link aria-label="post link to 胎菊" href=https://theone-daxia.github.io/blog/tea/taiju/></a>
 </article>
 <footer class=page-footer>
 <nav class=pagination>

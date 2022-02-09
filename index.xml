@@ -9,7 +9,25 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从别后</title>
+      <link>https://theone-daxia.github.io/blog/music/doupo_s1/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/music/doupo_s1/</guid>
+      <description>斗破苍穹-特别篇1</description>
+    </item>
+    
+    <item>
+      <title>远行人</title>
+      <link>https://theone-daxia.github.io/blog/music/chenshixing/</link>
+      <pubDate>Wed, 09 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/music/chenshixing/</guid>
+      <description>枕刀歌</description>
+    </item>
+    
     <item>
       <title>用 go 写个简单的 shell</title>
       <link>https://theone-daxia.github.io/blog/code/shell_in_go/</link>
