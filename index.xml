@@ -9,7 +9,37 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 09 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>新氧平台医美福利折扣项目</title>
+      <link>https://theone-daxia.github.io/blog/medical_beauty/project/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/medical_beauty/project/</guid>
+      <description>项目列表    【星选美次卡】买一赠一M221次卡（限北京）
+【在售价】299元
+毛孔粗大，肤色不均？M22全模式进口光子嫩肤——美白嫩肤界的佼佼者，目前参与内购还可享受买一赠一，快来下单吧！项目原理戳链接了解
+   【专享】菲欧曼复合+基础水光/3次/美白 （美次卡限北京）
+【在售价】6000元
+【到手价】3600元
+如果是第一次接触水光，但是又不知道选什么组合和品牌，那么真心推荐从这个组合开始，补水提亮抗衰美白焕肤！重要的是内购价格仅需￥3600！
+   【专享】红蓝光祛痘 买1赠1（限北京）
+【在售价】10元
+红蓝光祛痘，强烈安利给大家！蓝光抑菌，红光加速修复，有粉刺闭口痘痘肌的姐妹快快安排吧！项目原理戳链接了解
+   【专享】超爆黑钻卡含欧洲之星|AOPT|超皮秒|嗨体等 10选8（限北京）
+【在售价】4665元
+【到手价】2799元
+必Buy Top养肤全套！清洁+水光补水+果酸换肤+紧致皮肤+祛除皱纹+淡斑美白+抗衰嫩肤，10选8，套餐随心搭配，内购价2799，心动不如行动！项目原理戳链接了解
+   【专享】小白福利卡含M22|奇致CC光|果酸焕肤等 6选4（限北京）
+【在售价】332元
+【到手价】199元
+改善黑头粉刺，净肤细致毛孔的急救王，熬夜也发光！美肤套卡给你一站式皮肤护理，只需199即可享受4种变美小绝招~ 项目原理戳链接了解
+   【专享】CO2剥脱点阵 淡化痘印痘坑（限北京）
+【在售价】399元
+还在为痘坑痘印烦恼？点阵激光妥妥的安排上！专门针对凹陷性痘坑痘印治疗，CO2剥脱点阵，你值得拥有~ 项目原理戳链接了解
+ </description>
+    </item>
+    
     <item>
       <title>从别后</title>
       <link>https://theone-daxia.github.io/blog/music/doupo_s1/</link>
@@ -37,7 +67,7 @@
       <description>什么是 shell shell 就是一个支持输入命令，并显示出命令的输出的东西
 用 go 来写个简单的 shell 并使用它 步骤
  编写代码 build 出二进制文件，并将路径添加到 /etc/shells 里面 更换使用的 shell，退出重进（chsc -s xxx）   完整代码如下
-package main import ( &amp;#34;bufio&amp;#34; &amp;#34;errors&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;strings&amp;#34; ) func main() { reader := bufio.NewReader(os.Stdin) for { fmt.Print(&amp;#34;&amp;gt; &amp;#34;) // Read the keyboad input 	input, err := reader.ReadString(&amp;#39;\n&amp;#39;) if err != nil { fmt.Fprintln(os.Stderr, err) } // Handle the execution of the input 	if err = execInput(input); err !</description>
+package main  import ( 	&amp;#34;bufio&amp;#34; 	&amp;#34;errors&amp;#34; 	&amp;#34;fmt&amp;#34; 	&amp;#34;os&amp;#34; 	&amp;#34;os/exec&amp;#34; 	&amp;#34;strings&amp;#34; )  func main() { 	reader := bufio.NewReader(os.Stdin) 	for { 	fmt.Print(&amp;#34;&amp;gt; &amp;#34;) 	// Read the keyboad input 	input, err := reader.ReadString(&amp;#39;\n&amp;#39;) 	if err != nil { 	fmt.</description>
     </item>
     
     <item>
@@ -73,8 +103,8 @@ package main import ( &amp;#34;bufio&amp;#34; &amp;#34;errors&amp;#34; &amp;#34;
       <description>当前环境  hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark）  下面介绍配置 KaTeX 步骤
 添加 math partial 创建一个 math partial，路径为：/layouts/partials/math.html
 给 math partial 添加内容 在 /layouts/partials/math.html 文件里添加如下内容（ 参考 Auto-render Extension ）
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34; onload=&amp;#34;renderMathInElement(document.body);&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 只添加上述内容的话，就会只支持 block 公式，为了支持 inline 公式，还要在下方加入如下内容
-&amp;lt;script&amp;gt; document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() { renderMathInElement(document.body, { // customised options  // • auto-render specific keys, e.g.:  delimiters: [ {left: &amp;#39;$$&amp;#39;, right: &amp;#39;$$&amp;#39;, display: true}, {left: &amp;#39;$&amp;#39;, right: &amp;#39;$&amp;#39;, display: false}, {left: &amp;#39;\\(&amp;#39;, right: &amp;#39;\\)&amp;#39;, display: false}, {left: &amp;#39;\\[&amp;#39;, right: &amp;#39;\\]&amp;#39;, display: true} ], // • rendering keys, e.</description>
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;  onload=&amp;#34;renderMathInElement(document.body);&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 只添加上述内容的话，就会只支持 block 公式，为了支持 inline 公式，还要在下方加入如下内容
+&amp;lt;script&amp;gt;  document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() {  renderMathInElement(document.body, {  // customised options  // • auto-render specific keys, e.</description>
     </item>
     
     <item>
