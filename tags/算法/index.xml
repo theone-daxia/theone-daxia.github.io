@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>算法 on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+    <description>Recent content in 算法 on 冲和</description>
+    <image>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>算法思维框架</title>
+      <link>https://theone-daxia.github.io/blog/code/algorithm/thinking/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/algorithm/thinking/</guid>
+      <description>数组技巧 前缀和 适用场景
+适用于原始数组不会被修改的情况下，频繁的查询某个区间的累加和。
+构造方式
+nums := []int{1,2,3} preSum := make([]int, len(nums)+1) for i := 1; i &amp;lt; len(nums); i++ { preSum[i] = preSum[i-1] + nums[i-1] } 题目推荐（leetcode）
+303. 区域和检索-数组不可变 304. 二维区域和检索-矩阵不可变 差分数组 适用场景
+适用于频繁对原始数组某个区间的元素进行增减。
+构造方式
+nums := []int{1,2,3,4,5} diff := make([]int, len(nums)) diff[0] = nums[0] for i := 1; i &amp;lt; len(nums); i++ { diff[i] = nums[i] - nums[i-1] } // 如果要对原始数组下标 1-3 区间的元素都加 2，只需做如下两步操作 diff[1] += 2 diff[4] -= 2 // 最后根据 diff 来构造更新后原始数组 res := make([]int, len(diff)) res[0] = diff[0] for i := 1; i &amp;lt; len(diff); i++ { res[i] = res[i-1] + diff[i] } 题目推荐（leetcode）</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,17 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://theone-daxia.github.io/tags/algorithm/</loc>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/categories/algorithm/</loc>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://theone-daxia.github.io/blog/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/leetcode/</loc>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/</loc>
-    <lastmod>2022-03-01T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/blog/code/algorithm/thinking/</loc>
+    <lastmod>2022-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/%E5%8C%BB%E7%BE%8E%E4%B8%93%E5%8C%BA/</loc>
     <lastmod>2022-03-01T00:00:00+00:00</lastmod>

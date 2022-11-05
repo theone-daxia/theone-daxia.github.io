@@ -9,41 +9,56 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>算法思维框架</title>
+      <link>https://theone-daxia.github.io/blog/code/algorithm/thinking/</link>
+      <pubDate>Sat, 05 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/algorithm/thinking/</guid>
+      <description>数组技巧 前缀和 适用场景
+适用于原始数组不会被修改的情况下，频繁的查询某个区间的累加和。
+构造方式
+nums := []int{1,2,3} preSum := make([]int, len(nums)+1) for i := 1; i &amp;lt; len(nums); i++ { preSum[i] = preSum[i-1] + nums[i-1] } 题目推荐（leetcode）
+303. 区域和检索-数组不可变 304. 二维区域和检索-矩阵不可变 差分数组 适用场景
+适用于频繁对原始数组某个区间的元素进行增减。
+构造方式
+nums := []int{1,2,3,4,5} diff := make([]int, len(nums)) diff[0] = nums[0] for i := 1; i &amp;lt; len(nums); i++ { diff[i] = nums[i] - nums[i-1] } // 如果要对原始数组下标 1-3 区间的元素都加 2，只需做如下两步操作 diff[1] += 2 diff[4] -= 2 // 最后根据 diff 来构造更新后原始数组 res := make([]int, len(diff)) res[0] = diff[0] for i := 1; i &amp;lt; len(diff); i++ { res[i] = res[i-1] + diff[i] } 题目推荐（leetcode）</description>
+    </item>
+    
     <item>
       <title>新氧平台医美福利折扣项目</title>
       <link>https://theone-daxia.github.io/blog/medical_beauty/project/</link>
       <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
       
       <guid>https://theone-daxia.github.io/blog/medical_beauty/project/</guid>
-      <description>项目列表    【星选美次卡】买一赠一M221次卡（限北京）
+      <description>项目列表 【星选美次卡】买一赠一M221次卡（限北京）
 【在售价】299元
 毛孔粗大，肤色不均？M22全模式进口光子嫩肤——美白嫩肤界的佼佼者，目前参与内购还可享受买一赠一，快来下单吧！项目原理戳链接了解
-   【专享】菲欧曼复合+基础水光/3次/美白 （美次卡限北京）
+【专享】菲欧曼复合+基础水光/3次/美白 （美次卡限北京）
 【在售价】6000元
 【到手价】3600元
 如果是第一次接触水光，但是又不知道选什么组合和品牌，那么真心推荐从这个组合开始，补水提亮抗衰美白焕肤！重要的是内购价格仅需￥3600！
-   【专享】红蓝光祛痘 买1赠1（限北京）
+【专享】红蓝光祛痘 买1赠1（限北京）
 【在售价】10元
 红蓝光祛痘，强烈安利给大家！蓝光抑菌，红光加速修复，有粉刺闭口痘痘肌的姐妹快快安排吧！项目原理戳链接了解
-   【专享】超爆黑钻卡含欧洲之星|AOPT|超皮秒|嗨体等 10选8（限北京）
+【专享】超爆黑钻卡含欧洲之星|AOPT|超皮秒|嗨体等 10选8（限北京）
 【在售价】4665元
 【到手价】2799元
 必Buy Top养肤全套！清洁+水光补水+果酸换肤+紧致皮肤+祛除皱纹+淡斑美白+抗衰嫩肤，10选8，套餐随心搭配，内购价2799，心动不如行动！项目原理戳链接了解
-   【专享】小白福利卡含M22|奇致CC光|果酸焕肤等 6选4（限北京）
+【专享】小白福利卡含M22|奇致CC光|果酸焕肤等 6选4（限北京）
 【在售价】332元
 【到手价】199元
 改善黑头粉刺，净肤细致毛孔的急救王，熬夜也发光！美肤套卡给你一站式皮肤护理，只需199即可享受4种变美小绝招~ 项目原理戳链接了解
-   【专享】CO2剥脱点阵 淡化痘印痘坑（限北京）
+【专享】CO2剥脱点阵 淡化痘印痘坑（限北京）
 【在售价】399元
 还在为痘坑痘印烦恼？点阵激光妥妥的安排上！专门针对凹陷性痘坑痘印治疗，CO2剥脱点阵，你值得拥有~ 项目原理戳链接了解
-   【美次卡】国产除皱单部位祛鱼尾纹眉间纹抬头纹（限北京）
+【美次卡】国产除皱单部位祛鱼尾纹眉间纹抬头纹（限北京）
 【在售价】159元
-   【美次卡】冰点脱毛 腋下大臂小臂小腿唇毛眉心 6选1（限北京）
+【美次卡】冰点脱毛 腋下大臂小臂小腿唇毛眉心 6选1（限北京）
 【在售价】39元
-   【美次卡】果酸焕肤清洁祛痘改善闭口痤疮痘肌友好（限北京）
-【在售价】69元
- </description>
+【美次卡】果酸焕肤清洁祛痘改善闭口痤疮痘肌友好（限北京）
+【在售价】69元</description>
     </item>
     
     <item>
@@ -72,8 +87,8 @@
       <guid>https://theone-daxia.github.io/blog/code/shell_in_go/</guid>
       <description>什么是 shell shell 就是一个支持输入命令，并显示出命令的输出的东西
 用 go 来写个简单的 shell 并使用它 步骤
- 编写代码 build 出二进制文件，并将路径添加到 /etc/shells 里面 更换使用的 shell，退出重进（chsc -s xxx）   完整代码如下
-package main  import ( 	&amp;#34;bufio&amp;#34; 	&amp;#34;errors&amp;#34; 	&amp;#34;fmt&amp;#34; 	&amp;#34;os&amp;#34; 	&amp;#34;os/exec&amp;#34; 	&amp;#34;strings&amp;#34; )  func main() { 	reader := bufio.NewReader(os.Stdin) 	for { 	fmt.Print(&amp;#34;&amp;gt; &amp;#34;) 	// Read the keyboad input 	input, err := reader.ReadString(&amp;#39;\n&amp;#39;) 	if err != nil { 	fmt.</description>
+编写代码 build 出二进制文件，并将路径添加到 /etc/shells 里面 更换使用的 shell，退出重进（chsc -s xxx） 完整代码如下
+package main import ( &amp;#34;bufio&amp;#34; &amp;#34;errors&amp;#34; &amp;#34;fmt&amp;#34; &amp;#34;os&amp;#34; &amp;#34;os/exec&amp;#34; &amp;#34;strings&amp;#34; ) func main() { reader := bufio.NewReader(os.Stdin) for { fmt.Print(&amp;#34;&amp;gt; &amp;#34;) // Read the keyboad input input, err := reader.ReadString(&amp;#39;\n&amp;#39;) if err != nil { fmt.Fprintln(os.Stderr, err) } // Handle the execution of the input if err = execInput(input); err !</description>
     </item>
     
     <item>
@@ -94,7 +109,7 @@ package main  import ( 	&amp;#34;bufio&amp;#34; 	&amp;#34;errors&amp;#34; 	&amp;
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theone-daxia.github.io/blog/food/birthday_cake/</guid>
-      <description>位置信息  店名：Miss Mousse 蜜丝慕斯蛋糕（望京悠乐汇店） 地点：望京悠乐汇A4座一层底商136  总结 之前买生日蛋糕，总有些不如意， 要不就是有点好看，但是吃起来不好吃， 要不就是感觉比较小，其实量挺大，两个人根本吃不完。
+      <description>位置信息 店名：Miss Mousse 蜜丝慕斯蛋糕（望京悠乐汇店） 地点：望京悠乐汇A4座一层底商136 总结 之前买生日蛋糕，总有些不如意， 要不就是有点好看，但是吃起来不好吃， 要不就是感觉比较小，其实量挺大，两个人根本吃不完。
 这一次的生日我&amp;quot;翻山越岭&amp;quot;，在美团上找到了一家蛋糕店，竟有4寸蛋糕， 不仅量符合我的要求，模样之精美更是出乎我的意料，甚至看了下面的评论， 感觉每一个都味道绝佳。
 于是挑选了一款自认为很有仙气的蛋糕，&amp;ldquo;懵懂的椰子&amp;rdquo;， 拿到蛋糕后，果然没让我失望，好看又好吃， 封面图就是我拍的照片， 赠送了心形的燃烧棒（不知道叫啥，临时瞎起的名字）， 两人份的餐具也是精美可爱。
 是一家值得收藏的蛋糕店了，而且他家还提供座位，周日可以在那看书， 空气中还有一股淡淡的甜香，遗憾没能早点发现它。</description>
@@ -106,11 +121,11 @@ package main  import ( 	&amp;#34;bufio&amp;#34; 	&amp;#34;errors&amp;#34; 	&amp;
       <pubDate>Tue, 07 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://theone-daxia.github.io/blog/code/math_typesetting/</guid>
-      <description>当前环境  hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark）  下面介绍配置 KaTeX 步骤
+      <description>当前环境 hugo版本：v0.88.1 markdown 解析器：goldmark（Hugo 从 v0.60.0 开始，markdown 解析器就默认使用 goldmark） 下面介绍配置 KaTeX 步骤
 添加 math partial 创建一个 math partial，路径为：/layouts/partials/math.html
 给 math partial 添加内容 在 /layouts/partials/math.html 文件里添加如下内容（ 参考 Auto-render Extension ）
-&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;  onload=&amp;#34;renderMathInElement(document.body);&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 只添加上述内容的话，就会只支持 block 公式，为了支持 inline 公式，还要在下方加入如下内容
-&amp;lt;script&amp;gt;  document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() {  renderMathInElement(document.body, {  // customised options  // • auto-render specific keys, e.</description>
+&amp;lt;link rel=&amp;#34;stylesheet&amp;#34; href=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css&amp;#34; integrity=&amp;#34;sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js&amp;#34; integrity=&amp;#34;sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;script defer src=&amp;#34;https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js&amp;#34; integrity=&amp;#34;sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR&amp;#34; crossorigin=&amp;#34;anonymous&amp;#34; onload=&amp;#34;renderMathInElement(document.body);&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; 只添加上述内容的话，就会只支持 block 公式，为了支持 inline 公式，还要在下方加入如下内容
+&amp;lt;script&amp;gt; document.addEventListener(&amp;#34;DOMContentLoaded&amp;#34;, function() { renderMathInElement(document.body, { // customised options // • auto-render specific keys, e.g.: delimiters: [ {left: &amp;#39;$$&amp;#39;, right: &amp;#39;$$&amp;#39;, display: true}, {left: &amp;#39;$&amp;#39;, right: &amp;#39;$&amp;#39;, display: false}, {left: &amp;#39;\\(&amp;#39;, right: &amp;#39;\\)&amp;#39;, display: false}, {left: &amp;#39;\\[&amp;#39;, right: &amp;#39;\\]&amp;#39;, display: true} ], // • rendering keys, e.</description>
     </item>
     
     <item>
@@ -142,16 +157,16 @@ package main  import ( 	&amp;#34;bufio&amp;#34; 	&amp;#34;errors&amp;#34; 	&amp;
       <guid>https://theone-daxia.github.io/blog/code/ssh_tunnel/</guid>
       <description>简介 SSH 除了登陆服务器，还有一大用途，就是作为加密通信的中介，充当两台服务器之间的加密跳板，使得原本不加密的通信变成加密通信。 这个功能成为端口转发（port forwarding），又称 SSH 隧道（tunnel）。
 端口转发有两个主要作用：
- 将不加密的数据放在 SSH 安全连接里传输，使原本不安全的网络服务增加了安全性，比如通过端口转发访问 Telnet、FTP 等明文服务，数据传输就都会加密。 作为数据通信的加密跳板，绕过网络防火墙。  三种使用方法 端口转发有三种使用方法：动态转发、本地转发、远程转发。
+将不加密的数据放在 SSH 安全连接里传输，使原本不安全的网络服务增加了安全性，比如通过端口转发访问 Telnet、FTP 等明文服务，数据传输就都会加密。 作为数据通信的加密跳板，绕过网络防火墙。 三种使用方法 端口转发有三种使用方法：动态转发、本地转发、远程转发。
 1. 动态转发 动态转发是指，本机与 SSH 服务器之间创建了一个加密连接，本机内部针对某个端口的通信，都通过这个加密连接转发。
 动态转发将一个本地端口绑定到了 SSH 服务器，而 目标地址:目标端口 是不固定的，完全由发起的请求决定，所以叫动态转发。
 ssh -D local-port tunnel-host -N 上面命令中，-D表示动态转发，local-port是本地端口，tunnel-host是 SSH 服务器， -N表示这个 SSH 连接只进行端口转发，不登录远程 Shell，不能执行远程命令，只能充当隧道。
 如果经常使用动态转发，可以将设置写入 SSH 客户端的个人配置文件（~/.ssh/config）
 DynamicForward tunnel-host:local-port 应用举例 例1：
- 远程云主机B1运行了多个服务，分别使用了不同端口，本地主机A1需要访问这些服务。 一方面，由于安全限制，本地主机A1并不能直接访问远程云主机B1上的服务，因此需要进行端口转发， 另一方面，为每个端口分别创建本地端口转发非常麻烦。
- 可通过动态端口转发，将A1发起的请求转发到B1，命令如下：
+远程云主机B1运行了多个服务，分别使用了不同端口，本地主机A1需要访问这些服务。 一方面，由于安全限制，本地主机A1并不能直接访问远程云主机B1上的服务，因此需要进行端口转发， 另一方面，为每个端口分别创建本地端口转发非常麻烦。
+可通过动态端口转发，将A1发起的请求转发到B1，命令如下：
 ssh -D localhost:8080 root@xxx.xxx.xxx.xxx -N 注意，这种转发采用了 SOCKS5 协议，访问网站时，需要把 HTTP 请求转成 SOCKS5 协议，才能把本地端口的请求转发出去。 下面是 SSH 隧道建立后的一个使用示例：
-curl -x socks5://localhost:8080 https://www.</description>
+curl -x socks5://localhost:8080 https://www.google.com 上面命令中，curl 的-x参数指定代理服务器，即通过 SOCKS5 协议的本地 8080 端口，访问https://www.</description>
     </item>
     
     <item>
