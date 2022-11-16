@@ -9,7 +9,30 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&amp;^ 运算符</title>
+      <link>https://theone-daxia.github.io/blog/code/go/bit-clear/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/bit-clear/</guid>
+      <description>在查看 Mutex 源码中，看到了 &amp;amp;^ 这个运算符， 没见过，就去查了查。
+含义 按位清零
+即：
+运算符右边数字二进制为1的位置，左边数字二进制对应位置置0 运算符右边数字二进制为0的位置，左边数字二进制对应位置保留 示例 a := 10 b := 2 res := a &amp;amp;^ b fmt.Printf(&amp;#34;a = %b(%d)\n&amp;#34;, a, a) // a = 1010(10) fmt.Printf(&amp;#34;b = %b(%d)\n&amp;#34;, b, b) // b = 10(2) fmt.Printf(&amp;#34;res = %b(%d)\n&amp;#34;, res, res) // res = 1000(8) </description>
+    </item>
+    
+    <item>
+      <title>原子操作实现互斥锁</title>
+      <link>https://theone-daxia.github.io/blog/code/go/atomic/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/atomic/</guid>
+      <description>下面的 MyMutex 即通过原子操作实现了 Locker 接口。
+只是简易实现，实际的 Mutex 还会考虑到给 新来的goroutine、等待的goroutine更多机会， 还有饥饿处理（1ms后），防止队尾的goroutine总是得不到锁。
+package test import ( &amp;#34;sync&amp;#34; &amp;#34;sync/atomic&amp;#34; &amp;#34;testing&amp;#34; ) type MyMutex struct { key int32 } func (m *MyMutex)Lock() { for !atomic.CompareAndSwapInt32(&amp;amp;m.key, 0, 1) { } } func (m *MyMutex)Unlock() { atomic.StoreInt32(&amp;amp;m.key, 0) } func TestMutex(t *testing.T) { var count = 0 var wg sync.WaitGroup var myMux = MyMutex{} wg.Add(10) for i := 0; i &amp;lt; 10; i++ { go func() { defer wg.</description>
+    </item>
+    
     <item>
       <title>算法思维框架</title>
       <link>https://theone-daxia.github.io/blog/code/algorithm/thinking/</link>

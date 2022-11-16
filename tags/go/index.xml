@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>go on 冲和</title>
+    <title>go &amp;^ on 冲和</title>
     <link>https://theone-daxia.github.io/tags/go/</link>
-    <description>Recent content in go on 冲和</description>
+    <description>Recent content in go &amp;^ on 冲和</description>
     <image>
       <url>https://theone-daxia.github.io/papermod-cover.png</url>
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&amp;^ 运算符</title>
+      <link>https://theone-daxia.github.io/blog/code/go/bit-clear/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/bit-clear/</guid>
+      <description>在查看 Mutex 源码中，看到了 &amp;amp;^ 这个运算符， 没见过，就去查了查。
+含义 按位清零
+即：
+运算符右边数字二进制为1的位置，左边数字二进制对应位置置0 运算符右边数字二进制为0的位置，左边数字二进制对应位置保留 示例 a := 10 b := 2 res := a &amp;amp;^ b fmt.Printf(&amp;#34;a = %b(%d)\n&amp;#34;, a, a) // a = 1010(10) fmt.Printf(&amp;#34;b = %b(%d)\n&amp;#34;, b, b) // b = 10(2) fmt.Printf(&amp;#34;res = %b(%d)\n&amp;#34;, res, res) // res = 1000(8) </description>
+    </item>
+    
     <item>
       <title>用 go 写个简单的 shell</title>
       <link>https://theone-daxia.github.io/blog/code/shell_in_go/</link>

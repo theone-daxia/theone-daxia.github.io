@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>互斥锁 on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/</link>
+    <description>Recent content in 互斥锁 on 冲和</description>
+    <image>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>原子操作实现互斥锁</title>
+      <link>https://theone-daxia.github.io/blog/code/go/atomic/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/atomic/</guid>
+      <description>下面的 MyMutex 即通过原子操作实现了 Locker 接口。
+只是简易实现，实际的 Mutex 还会考虑到给 新来的goroutine、等待的goroutine更多机会， 还有饥饿处理（1ms后），防止队尾的goroutine总是得不到锁。
+package test import ( &amp;#34;sync&amp;#34; &amp;#34;sync/atomic&amp;#34; &amp;#34;testing&amp;#34; ) type MyMutex struct { key int32 } func (m *MyMutex)Lock() { for !atomic.CompareAndSwapInt32(&amp;amp;m.key, 0, 1) { } } func (m *MyMutex)Unlock() { atomic.StoreInt32(&amp;amp;m.key, 0) } func TestMutex(t *testing.T) { var count = 0 var wg sync.WaitGroup var myMux = MyMutex{} wg.Add(10) for i := 0; i &amp;lt; 10; i++ { go func() { defer wg.</description>
+    </item>
+    
+  </channel>
+</rss>
