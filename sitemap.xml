@@ -2,28 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://theone-daxia.github.io/blog/code/go/bit-clear/</loc>
-    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theone-daxia.github.io/blog/</loc>
-    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/</loc>
-    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/go/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/blog/code/go/recursive-mutex/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/%E5%8F%AF%E9%87%8D%E5%85%A5%E9%94%81/</loc>
+    <lastmod>2022-11-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/blog/code/go/bit-clear/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/go/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theone-daxia.github.io/tags/</loc>
-    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theone-daxia.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/</loc>
-    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theone-daxia.github.io/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/%E5%8E%9F%E5%AD%90%E6%93%8D%E4%BD%9C/</loc>

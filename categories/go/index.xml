@@ -9,7 +9,20 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>go实现可重入锁</title>
+      <link>https://theone-daxia.github.io/blog/code/go/recursive-mutex/</link>
+      <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/recursive-mutex/</guid>
+      <description>总结 go 的 Mutex 不支持可重入， 因为它的实现里没有记录哪个 goroutine 拥有这把锁，所以要实现一个可重入的锁， 关键在于要能记录哪个 goroutine 拥有锁，且要记录重入次数。
+要记录拥有锁的 goroutine，有两个方案：
+获取 goroutine id，来记录哪个 goroutine 获取了锁。 由调用方的 goroutine 提供一个 token，来标识它自己。 对于方案一，获取 goroutine id 有两种方式。
+第一种是通过 runtime.Stack() 获取。
+func GoId() int64 { var buf [64]byte n := runtime.Stack(buf[:], false) s := strings.TrimPrefix(string(buf[:n]), &amp;#34;goroutine &amp;#34;) idField := strings.Fields(s)[0] id, err := strconv.Atoi(idField) if err != nil { panic(fmt.Sprintf(&amp;#34;cannot get goroutine id: %v\n&amp;#34;, err)) } return int64(id) } 另一种是通过 hacker 方式获取。此方式大致通过以下三步来获取 goroutine id：</description>
+    </item>
+    
     <item>
       <title>&amp;^ 运算符</title>
       <link>https://theone-daxia.github.io/blog/code/go/bit-clear/</link>
