@@ -9,7 +9,19 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 17 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Dec 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>github 克隆自己的私有仓库</title>
+      <link>https://theone-daxia.github.io/blog/code/github/clone-private/</link>
+      <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/github/clone-private/</guid>
+      <description>起因 最近换了个电脑，克隆自己的私有仓库时失败， 总是报权限相关的问题。查询文档后，找到解决办法。
+文档链接：https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+解决办法 根据文档，按照如下步骤操作：
+点击个人头像，在下拉菜单中点击 Settings 点击左边菜单栏最下面的 Developer settings 点击 Personal access tokens 点击 Fine-grained tokens 点击 Generate new token 然后就是按照页面上的选项操作，比如给 token 起名、选择仓库、选择权限、选择过期时间等 最后生成 token，点击复制 再次操作克隆 git clone https://xxx，回车后会让你输入用户名和密码，密码就输入刚才复制的 token，结束！ </description>
+    </item>
+    
     <item>
       <title>go实现可重入锁</title>
       <link>https://theone-daxia.github.io/blog/code/go/recursive-mutex/</link>
