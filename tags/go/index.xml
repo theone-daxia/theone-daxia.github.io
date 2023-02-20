@@ -9,7 +9,16 @@
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>练手小项目-Pacman</title>
+      <link>https://theone-daxia.github.io/blog/code/go/pacman/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/pacman/</guid>
+      <description>go编写的终端小游戏</description>
+    </item>
+    
     <item>
       <title>&amp;^ 运算符</title>
       <link>https://theone-daxia.github.io/blog/code/go/bit-clear/</link>

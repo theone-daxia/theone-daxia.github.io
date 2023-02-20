@@ -3,10 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theone-daxia.github.io/blog/</loc>
-    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/</loc>
-    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/categories/go/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/go/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/categories/%E7%BB%83%E6%89%8B%E5%B0%8F%E9%A1%B9%E7%9B%AE/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/blog/code/go/pacman/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/%E7%BB%88%E7%AB%AF%E5%B0%8F%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/homebrew/</loc>
     <lastmod>2022-12-15T00:00:00+00:00</lastmod>
@@ -17,12 +38,6 @@
     <loc>https://theone-daxia.github.io/categories/mac/</loc>
     <lastmod>2022-12-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://theone-daxia.github.io/tags/</loc>
-    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theone-daxia.github.io/</loc>
-    <lastmod>2022-12-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://theone-daxia.github.io/tags/clone-my-private-pro/</loc>
     <lastmod>2022-12-01T00:00:00+00:00</lastmod>
   </url><url>
@@ -30,9 +45,6 @@
     <lastmod>2022-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/blog/code/github/clone-private/</loc>
-    <lastmod>2022-12-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theone-daxia.github.io/categories/go/</loc>
     <lastmod>2022-12-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/go-gc/</loc>
@@ -51,9 +63,6 @@
     <lastmod>2022-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/blog/code/go/bit-clear/</loc>
-    <lastmod>2022-11-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theone-daxia.github.io/tags/go/</loc>
     <lastmod>2022-11-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/</loc>
