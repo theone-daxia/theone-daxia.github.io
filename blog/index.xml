@@ -11,6 +11,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>练手小项目-Chat Demo</title>
+      <link>https://theone-daxia.github.io/blog/code/go/chat-demo/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/chat-demo/</guid>
+      <description>go编写的聊天小项目</description>
+    </item>
+    
+    <item>
       <title>练手小项目-Pacman</title>
       <link>https://theone-daxia.github.io/blog/code/go/pacman/</link>
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>

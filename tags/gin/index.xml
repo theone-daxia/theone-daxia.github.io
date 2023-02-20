@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>gin on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/gin/</link>
+    <description>Recent content in gin on 冲和</description>
+    <image>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/gin/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>练手小项目-Chat Demo</title>
+      <link>https://theone-daxia.github.io/blog/code/go/chat-demo/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/chat-demo/</guid>
+      <description>go编写的聊天小项目</description>
+    </item>
+    
+  </channel>
+</rss>
