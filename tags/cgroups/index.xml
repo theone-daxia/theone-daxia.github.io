@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cgroups on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/cgroups/</link>
+    <description>Recent content in cgroups on 冲和</description>
+    <image>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 26 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/cgroups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>docker核心技术</title>
+      <link>https://theone-daxia.github.io/blog/code/docker/base/</link>
+      <pubDate>Sun, 26 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/docker/base/</guid>
+      <description>namespace（隔离性） linux namespace 是一种 linux kernel 提供的资源隔离方案：
+系统可以为进程分配不同的 namespace。 保证不同的 namespace 资源独立分配、进程彼此隔离，即不同 namespace 下的进程互不干扰。 相关数据结构 linux 内核代码中 namespace 的实现：
+进程数据结构
+struct task_struct { ... /* namespaces */ struct nsproxy *nsproxy; ... } 这里 nsproxy 属性就表示这个进程所在的 namespace 的信息。
+namespace 数据结构
+struct nsproxy { atomic_t count; struct uts_namespace *uts_ns; struct ipc_namespace *ipc_ns; struct mnt_namespace *mnt_ns; struct pid_namespace *pid_ns_for_children; struct net *net_ns; } linux 对 namespace 的操作方法 clone
+在创建新进程的系统调用时，可以通过 flags 参数指定需要新建的 namespace 类型： // CLONE_NEWCGROUP, CLONE_NEWIPC, CLONE_NEWNET, CLONE_NEWNS, // CLONE_NEWPID, CLONE_NEWUSER, CLONE_NEWUTS</description>
+    </item>
+    
+  </channel>
+</rss>
