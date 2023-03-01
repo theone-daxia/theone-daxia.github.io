@@ -97,6 +97,16 @@ RST 就是用于这种情况，一般用来异常的关闭一个连接。它是 
     </item>
     
     <item>
+      <title>go 字符串拼接对比</title>
+      <link>https://theone-daxia.github.io/blog/code/go/string-join/</link>
+      <pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/go/string-join/</guid>
+      <description>字符串拼接方式 += bytes.Buffer{}.WriteString() strings.Builder{}.WriteString() copy 基准测试 代码：
+var ( str = &amp;#34;s&amp;#34; count = 1000 expectStr = strings.Repeat(str, count) ) func BenchmarkPlus(b *testing.B) { for i := 0; i &amp;lt; b.N; i++ { var s string for j := 0; j &amp;lt; count; j++ { s += str } if expectStr != s { b.Error(&amp;#34;repeat count error&amp;#34;) } } } func BenchmarkBuffer(b *testing.B) { for i := 0; i &amp;lt; b.</description>
+    </item>
+    
+    <item>
       <title>go实现可重入锁</title>
       <link>https://theone-daxia.github.io/blog/code/go/recursive-mutex/</link>
       <pubDate>Thu, 17 Nov 2022 00:00:00 +0000</pubDate>
