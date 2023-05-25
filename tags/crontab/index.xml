@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>crontab on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/crontab/</link>
+    <description>Recent content in crontab on 冲和</description>
+    <image>
+      <title>冲和</title>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/crontab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>轻量应用服务器配置crontab后无效</title>
+      <link>https://theone-daxia.github.io/blog/linux/crontab/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/linux/crontab/</guid>
+      <description>背景 需要定时同步订单数据，所以在阿里云轻量应用服务器上配置了 crontab， 发现并未生效，但是手动执行命令是可以的。
+问题 crontab -e 配置定时任务后，未生效。
+解决 怀疑是环境变量未获取到的原因， 就在定时任务前加了 source /etc/profile，至此解决。
+# 之前的配置 * * * * * cd xxx &amp;amp;&amp;amp; php artisan schedule:run &amp;gt;&amp;gt; /dev/null 2&amp;gt;&amp;amp;1 # 修改之后的配置 * * * * * source /etc/profile;cd xxx &amp;amp;&amp;amp; php artisan schedule:run &amp;gt;&amp;gt; /dev/null 2&amp;gt;&amp;amp;1 具体可参考这篇文章 【转载】Linux 中 Crontab 执行时的环境变量问题</description>
+    </item>
+    
+  </channel>
+</rss>

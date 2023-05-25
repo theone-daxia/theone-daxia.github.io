@@ -5,10 +5,12 @@
     <link>https://theone-daxia.github.io/tags/goldmark/</link>
     <description>Recent content in goldmark on 冲和</description>
     <image>
+      <title>冲和</title>
       <url>https://theone-daxia.github.io/papermod-cover.png</url>
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Tue, 07 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/goldmark/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>hugo支持数学公式排版</title>

@@ -5,10 +5,12 @@
     <link>https://theone-daxia.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/</link>
     <description>Recent content in 互斥锁 on 冲和</description>
     <image>
+      <title>冲和</title>
       <url>https://theone-daxia.github.io/papermod-cover.png</url>
       <link>https://theone-daxia.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/%E4%BA%92%E6%96%A5%E9%94%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>原子操作实现互斥锁</title>
