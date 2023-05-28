@@ -14,10 +14,10 @@
     <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>轻量应用服务器配置crontab后无效</title>
-      <link>https://theone-daxia.github.io/blog/linux/crontab/</link>
+      <link>https://theone-daxia.github.io/blog/code/linux/crontab/</link>
       <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/linux/crontab/</guid>
+      <guid>https://theone-daxia.github.io/blog/code/linux/crontab/</guid>
       <description>背景 需要定时同步订单数据，所以在阿里云轻量应用服务器上配置了 crontab， 发现并未生效，但是手动执行命令是可以的。
 问题 crontab -e 配置定时任务后，未生效。
 解决 怀疑是环境变量未获取到的原因， 就在定时任务前加了 source /etc/profile，至此解决。
@@ -85,6 +85,30 @@ RST 就是用于这种情况，一般用来异常的关闭一个连接。它是 
       
       <guid>https://theone-daxia.github.io/blog/code/go/pacman/</guid>
       <description>go编写的终端小游戏</description>
+    </item>
+    
+    <item>
+      <title>composer require maatwebsite/excel ^3.1 失败</title>
+      <link>https://theone-daxia.github.io/blog/code/laravel/composer/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/laravel/composer/</guid>
+      <description>问题 如题，安装 maatwebsite/excel 3.x 版本失败，提示各种依赖不满足
+解决 在提示的最后一行有下面这句
+Use the option --with-all-dependencies (-W) to allow upgrades, downgrades and removals for packages currently locked to specific versions. 所以执行 composer require maatwebsite/excel ^3.1 -W 即可。</description>
+    </item>
+    
+    <item>
+      <title>laravel 配置 https</title>
+      <link>https://theone-daxia.github.io/blog/code/laravel/https/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/laravel/https/</guid>
+      <description>laravel 设置 https 的几种情况 提交表单，提示不安全问题 &amp;lt;!-- 原来的写法 --&amp;gt; &amp;lt;form action=&amp;#34;{{ route(&amp;#39;order/import&amp;#39;) }}&amp;#34; method=&amp;#34;POST&amp;#34; enctype=&amp;#34;multipart/form-data&amp;#34;&amp;gt;&amp;lt;/form&amp;gt; &amp;lt;!-- 修改后的写法 --&amp;gt; &amp;lt;!-- --&amp;gt; &amp;lt;form action=&amp;#34;{{ secure_url(&amp;#39;order/import&amp;#39;) }}&amp;#34; method=&amp;#34;POST&amp;#34; enctype=&amp;#34;multipart/form-data&amp;#34;&amp;gt;&amp;lt;/form&amp;gt; 即使用 secure_url() 方法替换 route() 方法即可。
+注意：使用 secure_url() 时，如果不是相对路径，则需要将第三个参数设置为 false， 即 secure_url(&amp;lsquo;your path&amp;rsquo;, [], false)。
+全局使用 https 在使用相关框架做管理后台开发，比如 nova、laravel-admin、orchid 等， 需要配置使用 https 时，有以下两种方法。
+1. 修改 nginx 配置 在对应项目的 nginx 配置中，添加 fastcgi_patam HTTPS on;
+location ~ [^/]\.php(/|$) { #fastcgi_pass remote_php_ip:9000; fastcgi_pass unix:/dev/shm/php-cgi.sock; fastcgi_index index.php; fastcgi_param HTTPS on; fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name; include fastcgi_params; } 2.</description>
     </item>
     
     <item>

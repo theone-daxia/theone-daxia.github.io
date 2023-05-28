@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>composer on 冲和</title>
+    <link>https://theone-daxia.github.io/tags/composer/</link>
+    <description>Recent content in composer on 冲和</description>
+    <image>
+      <title>冲和</title>
+      <url>https://theone-daxia.github.io/papermod-cover.png</url>
+      <link>https://theone-daxia.github.io/papermod-cover.png</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/tags/composer/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>composer require maatwebsite/excel ^3.1 失败</title>
+      <link>https://theone-daxia.github.io/blog/code/laravel/composer/</link>
+      <pubDate>Sat, 28 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://theone-daxia.github.io/blog/code/laravel/composer/</guid>
+      <description>问题 如题，安装 maatwebsite/excel 3.x 版本失败，提示各种依赖不满足
+解决 在提示的最后一行有下面这句
+Use the option --with-all-dependencies (-W) to allow upgrades, downgrades and removals for packages currently locked to specific versions. 所以执行 composer require maatwebsite/excel ^3.1 -W 即可。</description>
+    </item>
+    
+  </channel>
+</rss>

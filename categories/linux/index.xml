@@ -14,10 +14,10 @@
     <lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://theone-daxia.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>轻量应用服务器配置crontab后无效</title>
-      <link>https://theone-daxia.github.io/blog/linux/crontab/</link>
+      <link>https://theone-daxia.github.io/blog/code/linux/crontab/</link>
       <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://theone-daxia.github.io/blog/linux/crontab/</guid>
+      <guid>https://theone-daxia.github.io/blog/code/linux/crontab/</guid>
       <description>背景 需要定时同步订单数据，所以在阿里云轻量应用服务器上配置了 crontab， 发现并未生效，但是手动执行命令是可以的。
 问题 crontab -e 配置定时任务后，未生效。
 解决 怀疑是环境变量未获取到的原因， 就在定时任务前加了 source /etc/profile，至此解决。
