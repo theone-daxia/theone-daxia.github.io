@@ -3,21 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://theone-daxia.github.io/blog/</loc>
-    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/</loc>
-    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/categories/mysql/</loc>
+    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/</loc>
+    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/</loc>
+    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/tags/%E6%95%B0%E6%8D%AE%E9%A1%B5/</loc>
+    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://theone-daxia.github.io/blog/code/mysql/data_page/</loc>
+    <lastmod>2023-06-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/tags/crontab/</loc>
     <lastmod>2023-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/categories/linux/</loc>
-    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theone-daxia.github.io/tags/</loc>
-    <lastmod>2023-05-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://theone-daxia.github.io/</loc>
     <lastmod>2023-05-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://theone-daxia.github.io/blog/code/linux/crontab/</loc>
